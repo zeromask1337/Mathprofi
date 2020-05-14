@@ -1,0 +1,189 @@
+//BASIC PROPERTIES
+@import "optional";
+
+h2 {
+    font-size: $h2;
+}
+h3 {
+    font-size: $h3;
+}
+h4 {
+    font-size: $h4;
+}
+h5 {
+    font-size: $h5;
+}
+
+body {
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+
+    @media #{$macbook} {
+        font-size: 13px;
+    }
+
+    @media #{$ipad} {
+        font-size: 12px;
+    }
+
+    @media #{$iphone} {
+        font-size: 11px;
+    }
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+}
+
+a {
+    color: $blue;
+    text-decoration: none;
+}
+
+.wrapper {
+    display: grid;
+    justify-content: start;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 12em auto auto auto;
+    max-width: 1440px;
+    margin: 2.5em auto;
+
+    @media #{$iphone} {
+        justify-items: center;
+    }
+}
+
+.nav,
+.mathprofi {
+    grid-column: 3/5;
+
+    @media #{$ipad} {
+        grid-column: 2/5;
+    }
+
+    @media #{$iphone} {
+        grid-column: none;
+    }
+}
+
+.nav {
+    @media #{$iphone} {
+        margin: 50px auto;
+    }
+}
+
+.mathprofi {
+    max-width: 179px;
+    width: 100%;
+    height: auto;
+
+    @media #{$iphone} {
+        grid-row: 1/2;
+    }
+}
+
+.content,
+.title {
+    grid-column: 6/11;
+
+    @media #{$ipad} {
+        grid-column: 6/12;
+    }
+
+    @media #{$iphone} {
+        grid-column: none;
+    }
+}
+
+.title {
+    font: {
+        family: Roboto;
+        style: italic;
+    }
+    background-image: $outsider;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left: 4px;
+
+    @media #{$iphone} {
+        grid-row: 2/3;
+        text-align: center;
+    }
+}
+
+br {
+    display: block;
+    margin: 5px;
+}
+
+//Navigation properties
+
+.search {
+    box-sizing: border-box;
+    padding: 3px;
+    width: 100%;
+    border: 2px solid #000 {
+        radius: 3px;
+        color: $blue;
+    }
+}
+
+.navigation,
+.themes {
+    list-style-type: none;
+}
+
+.navigation {
+    font-size: $h5;
+    color: $black;
+    margin-top: 20px;
+    padding: 0;
+
+    &__item {
+        margin-bottom: 40px;
+    }
+
+    &__item span {
+        display: block;
+        margin-bottom: 1.0625em;
+        text-decoration: none;
+        color: $black;
+    }
+}
+
+.themes {
+    font-size: 1em;
+    color: $blue;
+    margin-bottom: 0.625em;
+    padding-left: 2.0625em;
+
+    &__item {
+        cursor: pointer;
+        margin-bottom: 0.5625em;
+
+        @media #{$iphone} {
+            width: 80%;
+        }
+    }
+}
+
+.content__item {
+    margin-bottom: 70px;
+
+    & h3 {
+        font-weight: 500;
+        text-transform: uppercase;
+        background-image: $void;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-top: 0;
+        width: 75%;
+    }
+}
+
+.quote {
+    background: rgba(13, 131, 190, 0.247);
+    border-left: 3px solid $blue;
+    padding: 10px;
+    font-style: italic;
+}
