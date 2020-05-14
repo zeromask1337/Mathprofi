@@ -102,6 +102,7 @@ a {
     }
     background-image: $outsider;
     background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding-left: 4px;
 
@@ -173,8 +174,9 @@ br {
     & h3 {
         font-weight: 500;
         text-transform: uppercase;
-        background-image: $void;
+        background: $void;
         background-clip: text;
+        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         margin-top: 0;
         width: 75%;
