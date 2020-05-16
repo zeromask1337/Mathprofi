@@ -1,18 +1,20 @@
-//BASIC PROPERTIES
 @import "optional";
 
-h2 {
-    font-size: $h2;
-}
-h3 {
-    font-size: $h3;
-}
-h4 {
-    font-size: $h4;
-}
-h5 {
-    font-size: $h5;
-}
+/*********************************************\
+*                   MAP                       *
+* -Basic properties                           *
+* -Initiating grid wrapper                    *
+* -Grid templates                             *
+* -Header properties                          *
+* -Navigation (sidebar) properties            *
+* -Content (main) properties                  *
+\*********************************************/
+
+/*
+*
+//BASIC PROPERTIES
+*
+*/
 
 body {
     font-size: 14px;
@@ -31,14 +33,11 @@ body {
     }
 }
 
-p {
-    font-family: "Open Sans", sans-serif;
-}
-
-a {
-    color: $blue;
-    text-decoration: none;
-}
+/*
+*
+//INITIATING GRID WRAPPER
+*
+*/
 
 .wrapper {
     display: grid;
@@ -53,6 +52,12 @@ a {
     }
 }
 
+/*
+*
+//GRID TEMPLATES
+*
+*/
+
 .nav,
 .mathprofi {
     grid-column: 3/5;
@@ -66,22 +71,6 @@ a {
     }
 }
 
-.nav {
-    @media #{$iphone} {
-        margin: 50px auto;
-    }
-}
-
-.mathprofi {
-    max-width: 179px;
-    width: 100%;
-    height: auto;
-
-    @media #{$iphone} {
-        grid-row: 1/2;
-    }
-}
-
 .content,
 .title {
     grid-column: 6/11;
@@ -92,6 +81,22 @@ a {
 
     @media #{$iphone} {
         grid-column: none;
+    }
+}
+
+/*
+*
+//HEADER PROPERTIES
+*
+*/
+
+.mathprofi {
+    max-width: 179px;
+    width: 100%;
+    height: auto;
+
+    @media #{$iphone} {
+        grid-row: 1/2;
     }
 }
 
@@ -112,12 +117,17 @@ a {
     }
 }
 
-br {
-    display: block;
-    margin: 5px;
-}
+/*
+*
+//NAVIGATION (SIDEBAR) PROPERTIES
+*
+*/
 
-//Navigation properties
+.nav {
+    @media #{$iphone} {
+        margin: 50px auto;
+    }
+}
 
 .search {
     box-sizing: border-box;
@@ -167,6 +177,12 @@ br {
         }
     }
 }
+
+/*
+*
+//CONTENT (MAIN) PROPERTIES
+*
+*/
 
 .content__item {
     margin-bottom: 70px;
