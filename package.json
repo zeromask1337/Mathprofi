@@ -1,5 +1,5 @@
 {
-    "name": "Horizon",
+    "name": "Mathprofi",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
@@ -9,7 +9,7 @@
     "keywords": [],
     "author": "",
     "license": "ISC",
-    "homepage": "https://mathprofi3.github.io/mywebsite",
+    "homepage": "https://zeromask1337.github.io/Mathprofi/",
     "dependencies": {
         "gh-pages": "^2.2.0"
     }
