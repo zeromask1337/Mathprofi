@@ -137,6 +137,10 @@ body {
         radius: 3px;
         color: $blue;
     }
+
+    &::placeholder {
+        font-style: italic;
+    }
 }
 
 .navigation,
@@ -145,7 +149,7 @@ body {
 }
 
 .navigation {
-    font-size: $h5;
+    font-size: 1.0208em;
     color: $black;
     margin-top: 20px;
     padding: 0;
@@ -171,10 +175,15 @@ body {
     &__item {
         cursor: pointer;
         margin-bottom: 0.5625em;
+        transition: 0.1s ease-in-out color;
 
         @media #{$iphone} {
             width: 80%;
         }
+    }
+
+    &__item:hover {
+        color: lighten($pink, 15%);
     }
 }
 
@@ -188,8 +197,8 @@ body {
     margin-bottom: 70px;
 
     & h3 {
-        font-weight: 500;
-        text-transform: uppercase;
+        font-weight: 400;
+        font-family: "Ubuntu", "sans-serif";
         background: $void;
         background-clip: text;
         -webkit-background-clip: text;

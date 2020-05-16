@@ -3,7 +3,7 @@ $blue: #39c;
 $black: #222;
 $grey: #555;
 $pink: #9b51e0;
-$void: linear-gradient(106.71deg, #555555 -2.97%, #222222 101.97%);
+$void: linear-gradient(128.21deg, #b6b6b6 -33.4%, #222222 81.87%);
 $outsider: linear-gradient(111.33deg, #3399cc -4.88%, #9b51e0 82.71%);
 
 //Sizes
@@ -32,7 +32,8 @@ a {
 }
 
 p {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Istok Web", sans-serif;
+    text-rendering: optimizeLegibility;
 }
 
 //Screen Ratio snippets
