@@ -199,10 +199,6 @@ body {
     & h3 {
         font-weight: 400;
         font-family: "Ubuntu", "sans-serif";
-        background: $void;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
         margin-top: 0;
         width: 75%;
     }
