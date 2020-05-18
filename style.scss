@@ -17,19 +17,19 @@
 */
 
 body {
-    font-size: 14px;
+    font-size: 15px;
     font-family: "Roboto", sans-serif;
 
     @media #{$macbook} {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     @media #{$ipad} {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     @media #{$iphone} {
-        font-size: 11px;
+        font-size: 12px;
     }
 }
 
@@ -104,6 +104,7 @@ body {
     font: {
         family: Roboto;
         style: italic;
+        weight: 500;
     }
     background-image: $outsider;
     background-clip: text;
@@ -201,6 +202,7 @@ body {
         font-family: "Ubuntu", "sans-serif";
         margin-top: 0;
         width: 75%;
+        color: $black;
     }
 }
 
